@@ -20,5 +20,33 @@
     <!-- h2 크기의 text를 출력 -->
     <p>문단입니다.</p>
     <!-- 본문 크기의 text를 출력 -->
+    <!-- <a href="연결 주소"></a>로 컨텐츠 삽입 -->
+    <!-- <img src="image.jpg""/> 같은 폴더 내 이미지가 존재 -->
+    <!-- <img src="subfolder/image.jpg""/> 하위 폴더 내 이미지가 존재 -->
+    <!-- <img src="../image.jpg""/> 상위 폴더 내 이미지가 존재 -->
+    <form action="" method="GET">
+        <input type="text" name="name" value="이름">
+        <input type="text" name="phone" value="전화번호">
+        <!-- 인풋 타입 정리 -->
+        <!-- GET 메소드는 웹사이트에서 검색을 위한 방식, URL 끝에 쿼리 문자열을 통해 검색 -->
+        <!-- POST 메소드는 헤더와 바디에 정보를 담아 요청하는 방식. 입력값을 전송하는 방식 -->
+        <!-- password : 입력 데이터 *로 표시 -->
+        <!-- radio : 여러개 항목 중 한 개 선택 -->
+        <!-- checkbox : 여러개 항목 중 한개 혹은 여러 개 선택 -->
+        <button type="submit">전송</button>
+        <button type="reset">삭제</button>
+    </form>
+    <!-- 메소드가 GET 형식의 폼 생성 -->
+    <!-- 폼 안에는 입력 창 2개, 버튼 2개 생성 -->
+    <select>
+        <option value="kia">KIA</option>
+        <option value="hyundai">Hyundai</option>
+        <option value="Toyota">Toyota</option>
+        <option value="audi">Audi</option>
+    </select>
+    <!-- n개 option을 선택할 수 있는 드롭 박스 생성 -->
+    <textarea name="text_area">The cat was playing in the garden.
+    </textarea>
+    <!-- 텍스트 입력 창 생성 -->
 </body>
 </html>
