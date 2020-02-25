@@ -11,6 +11,20 @@
     <!-- 뭔지 모르겠음 -->
     <title>Document</title>
     <!-- 웹페이지의 이름. -->
+    <style>
+        p, h1 {
+            color: red;
+        }
+        #id{
+            background-color: aqua;
+        }
+        .class{
+            text-align: center;
+        }
+    </style>
+    <!-- css적용. p와 h1이라는 속성에 글꼴색 빨강을 부여 -->
+    <!-- id가 id인 속성 배경색은 아쿠아로 부여 -->
+    <!-- class가 class인 텍스트간 배열을 중심으로 설정, flex 설정 필수. -->
 </head>
 <body>
 <!-- 컨텐트 입력창. HTML에 표시되는 데이터를 입력한다. -->
@@ -38,6 +52,7 @@
     </form>
     <!-- 메소드가 GET 형식의 폼 생성 -->
     <!-- 폼 안에는 입력 창 2개, 버튼 2개 생성 -->
+
     <select>
         <option value="kia">KIA</option>
         <option value="hyundai">Hyundai</option>
@@ -48,5 +63,6 @@
     <textarea name="text_area">The cat was playing in the garden.
     </textarea>
     <!-- 텍스트 입력 창 생성 -->
+    <p>문단 태그입니다.</p>
 </body>
 </html>
