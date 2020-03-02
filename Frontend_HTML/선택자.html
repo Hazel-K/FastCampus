@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#test1 p {
+            color: red;
+        }
+    </style>
+    <!-- 손자 선택자 : id가 test1인 태그 아래 모든 p태그들은 글씨 색을 red로 -->
+    <style>
+        div#test2>p {
+            color: red;
+        }
+    </style>
+    <!-- 자식 선택자 : id가 test2인 태그의 바로 아래 p태그만 글씨 색을 red로 -->
+    <style>
+        div#test3 p#p1+p {
+            color: red;
+        }
+    </style>
+    <!-- 인접 선택자 : id가 test3인 태그 아래 id가 p1인 태그 바로 아래의 p의 글씨 색을 red로 -->
+    <style>
+        div#test4 p#p1 ~ p{
+            color: red;
+        }
+    </style>
+    <!-- 일반 형제 선택자 : id가 test4인 태그 아래 id가 p1인 태그와 그 아래의 형제들의 글씨 색을 red로 -->
+</head>
+
+<body>
+    <div id="test1">
+        <p>문단 태그입니다.</p>
+        <div>
+            <p>문단 태그입니다.<p>
+        </div>
+    </div>
+    </br>
+    <div id="test2">
+        <p>문단 태그입니다.</p>
+        <div>
+            <p>문단 태그입니다.<p>
+        </div>
+    </div>
+    </br>
+    <div id="test3">
+        <p>문단 태그입니다.</p>
+        <p>문단 태그입니다.</p>
+        <p id="p1">문단 태그입니다.</p>
+        <p>문단 태그입니다.</p>
+        <p>문단 태그입니다.</p>
+    </div>
+    </br>
+    <div id="test4">
+        <p>문단 태그입니다.</p>
+        <p>문단 태그입니다.</p>
+        <p id="p1">문단 태그입니다.</p>
+        <p>문단 태그입니다.</p>
+        <p>문단 태그입니다.</p>
+    </div>
+</body>
+
+</html>
