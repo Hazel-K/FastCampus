@@ -16,7 +16,7 @@ var arr = [1,2,3,4,5];
 console.log(arr.length);
 // 배열도 하나의 객체이고 길이라는 속성을 갖고 있다.
 
-var pi = math.pi;
+var pi = math.PI;
 console.log(pi);
 // 원주율
 
