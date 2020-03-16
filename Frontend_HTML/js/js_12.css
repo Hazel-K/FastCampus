@@ -1,0 +1,22 @@
+div#wrap {
+    border: 3px solid red;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+div.over > img {
+    animation: move;
+    animation-duration: 3s;
+}
+
+@keyframes move {
+    from{
+        opacity: 0.2;
+    } to{
+        opacity: 1;
+        margin-top: -15%;
+    }
+}
